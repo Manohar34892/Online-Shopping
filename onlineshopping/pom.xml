@@ -10,8 +10,17 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
+
+		<!-- Link the Shopping back end to front end -->
+		<dependency>
+			<groupId>com.vision</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
 		<!-- Spring WEB MVC -->
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -24,7 +33,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 		<!-- JavaEE Api -->
 
 		<dependency>
@@ -33,7 +42,7 @@
 			<version>8.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<!-- JUnit -->
 		<dependency>
 			<groupId>junit</groupId>

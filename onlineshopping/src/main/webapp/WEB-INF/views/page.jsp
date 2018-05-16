@@ -23,12 +23,21 @@
 <title>Online Shoping - ${title}</title>
 
 <script type="text/javascript">
-	menu = '${title}';
+	window.menu = '${title}';
+	window.contextRoot -= '${contextRoot}';
 </script>
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap theme css -->
-< <link href="${css}/bootstrap-solar.theme.css" rel="stylesheet"> 
+
+<!-- Bootstrap Solar theme -->
+<link href="${css}/bootstrap-solar.theme.css" rel="stylesheet">
+
+
+<!-- Bootstrap core CSS -->
+<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
+
+
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
@@ -59,14 +68,30 @@
 				<%@include file="contact.jsp"%>
 			</c:if>
 
+			<!-- All product or Category based on the product -->
+			<!-- Loading the contact page  -->
+			<c:if
+				test="${userClickAllProducts== true or userClickCategoryProducts== true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+
 		</div>
 
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
 
-		<!-- Bootstrap core JavaScript -->
+		<!-- Jquery -->
 		<script src="${js}/jquery.min.js"></script>
+
+		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/bootstrap.bundle.min.js"></script>
+
+		<!-- DataTable plug in-->
+		<script src="${js}/jquery.dataTables.js"></script>
+
+
+		<!-- Bootstrap dataTable-->
+		<script src="${js}/dataTables.bootstrap4.js"></script>
 
 		<!-- My Self javascript for acctive menu -->
 		<script src="${js}/app.js"></script>
