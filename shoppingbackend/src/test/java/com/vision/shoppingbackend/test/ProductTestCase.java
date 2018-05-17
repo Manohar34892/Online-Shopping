@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.vision.shoppingbackend.dao.ProductDAO;
@@ -30,7 +29,7 @@ public class ProductTestCase {
 	@Test
 	public void testProductCurd() {
 		
-	/*	product=new Product();
+		product=new Product();
 		product.setName("Oppo Selife S3");
 		product.setBrand("OPPO");
 		product.setDescription("This is small description about oppo mobile");
@@ -87,7 +86,7 @@ public class ProductTestCase {
 		
 		assertEquals("Product inserted Successfuly ", 3, productDAO.listActiveProducts().size());
 		assertEquals("Product inserted Successfuly ", 2, productDAO.listActiveProductsByCategory(3).size());
-		assertEquals("Product inserted Successfuly ", 3, productDAO.getLatestActiveProducts(4).size());*/
+		assertEquals("Product inserted Successfuly ", 3, productDAO.getLatestActiveProducts(4).size());
 		
 	}
 }

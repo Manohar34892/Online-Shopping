@@ -28,17 +28,17 @@ public class CategoryTestCase {
 
 	// Add Category to the datebase
 
-//	@Test
-//	public void addCategory() {
-//
-//		category = new Category();
-//		category.setName("Laptop");
-//		category.setDescription("This is small descririon Laptop");
-//		category.setImageURL("Laptop_Url");
-//
-//		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
-//
-//	}
+	@Test
+	public void addCategory() {
+
+		category = new Category();
+		category.setName("Laptop");
+		category.setDescription("This is small descririon Laptop");
+		category.setImageURL("Laptop_Url");
+
+		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
+
+	}
 
 	// Fetch a single Category from database
 
@@ -71,11 +71,11 @@ public class CategoryTestCase {
 
 	// Fetch List Category from database which are Active
 
-//	@Test
-//	public void listOfCategory() {
-//
-//		assertEquals("Successfully Fetch list of category from the database", 3, categoryDAO.listofitem().size());
-//	}
+	@Test
+	public void listOfCategory() {
+
+		assertEquals("Successfully Fetch list of category from the database", 3, categoryDAO.listofitem().size());
+	}
 
 	// aLL THE TEST CASE IN CURD OPERATION
 

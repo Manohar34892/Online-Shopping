@@ -29,8 +29,7 @@ public class UserAdressTestCase {
 	@Test
 	public void adressTestCase() {
 		
-		
-/*		address= new Address();
+		address= new Address();
 		address.setAddressLineOne("14 Kphb");
 		address.setBilling(true);
 		address.setCity("hyd");
@@ -58,7 +57,7 @@ public class UserAdressTestCase {
 		address.setPostalCode("524689");
 		assertEquals("successfully added", true,userDao.updateAddress(address));
 		
-		assertEquals("successfully fetch address", "hydrabad",userDao.getAddress(3).getCity());*/
+		assertEquals("successfully fetch address", "hydrabad",userDao.getAddress(3).getCity());
 		
 		assertEquals("successfully fetch address", "hyd",userDao.getBillingAddress(1).getCity());
 		

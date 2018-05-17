@@ -12,7 +12,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.vision.shoppingbackend.dao.CartLineDao;
 import com.vision.shoppingbackend.dao.ProductDAO;
 import com.vision.shoppingbackend.dao.UserDao;
-import com.vision.shoppingbackend.dto.Address;
 import com.vision.shoppingbackend.dto.OrderDetail;
 import com.vision.shoppingbackend.dto.OrderItem;
 import com.vision.shoppingbackend.dto.Product;

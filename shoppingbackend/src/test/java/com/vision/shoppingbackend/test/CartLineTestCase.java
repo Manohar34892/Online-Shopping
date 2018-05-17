@@ -34,7 +34,7 @@ public class CartLineTestCase {
 		userDAO = (UserDao) context.getBean("userDAO");
 	}
 	
-/*	
+	
 	@Test
 	public void testAddCartLine() {
 		
@@ -67,7 +67,7 @@ public class CartLineTestCase {
 		assertEquals("Failed to add the CartLine!",true, cartLineDAO.add(cartLine));
 		assertEquals("Failed to update the cart!",true, cartLineDAO.updateCart(cart));
 		
-	}*/
+	}
 	
 	@Test
 	public void testUpdateCartLine() {
