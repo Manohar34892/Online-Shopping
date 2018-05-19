@@ -11,7 +11,8 @@ import com.vision.shoppingbackend.dto.Category;
 
 @Controller
 public class PageController {
-
+	
+//	private static final Logger logger=LoggerFactory.getLogger(PageController.class);
 	@Autowired
 	private CategoryDAO categoryDao;
 	
@@ -19,7 +20,8 @@ public class PageController {
 	public ModelAndView index() {
 		ModelAndView mv= new ModelAndView("page");
 		mv.addObject("title", "Home");
-		
+//		logger.info("Logger info started");
+//		logger.debug("Logger info started");
 		// passing the list of categories
 		mv.addObject("categories",categoryDao.listofitem());
 		mv.addObject("userClickHome", "true");
@@ -30,6 +32,8 @@ public class PageController {
 	@RequestMapping("/about")
 	public ModelAndView about() {
 		ModelAndView mv= new ModelAndView("page");
+	//	logger.info("Logger info started");
+	//	logger.debug("Logger info started");
 		mv.addObject("title", "About");
 		mv.addObject("userClickAbout", "true");
 		return mv;
@@ -38,6 +42,8 @@ public class PageController {
 	@RequestMapping("/contact")
 	public ModelAndView contact() {
 		ModelAndView mv= new ModelAndView("page");
+	//	logger.info("Logger info started");
+	//	logger.debug("Logger info started");
 		mv.addObject("title", "Contact");
 		mv.addObject("userClickContact", "true");
 		return mv;
@@ -49,6 +55,8 @@ public class PageController {
 		ModelAndView mv= new ModelAndView("page");
 		mv.addObject("title", "Products");
 		
+//		logger.info("Logger info started");
+//		logger.debug("Logger info started");
 		// passing the list of categories
 		mv.addObject("categories",categoryDao.listofitem());
 		mv.addObject("userClickAllProducts", "true");
@@ -59,6 +67,8 @@ public class PageController {
 	public ModelAndView showProdutsByCategory(@PathVariable int id) {
 		ModelAndView mv= new ModelAndView("page");
 		
+//		logger.info("Logger info started");
+//		logger.debug("Logger info started");
 		//Based category we can get
 		Category category=null;
 		category=categoryDao.get(id);

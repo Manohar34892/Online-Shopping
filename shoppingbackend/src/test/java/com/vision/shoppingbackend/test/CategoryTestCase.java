@@ -79,37 +79,37 @@ public class CategoryTestCase {
 
 	// aLL THE TEST CASE IN CURD OPERATION
 
-//	@Test
-//	public void testCurdCategory() {
+	@Test
+	public void testCurdCategory() {
 
-//		// add a category
-//		category = new Category();
-//		category.setName("TV");
-//		category.setDescription("This is small descririon TV");
-//		category.setImageURL("Tv_Url");
+		// add a category
+		category = new Category();
+		category.setName("TV");
+		category.setDescription("This is small descririon TV");
+		category.setImageURL("Tv_Url");
 
-//		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
+		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
 
-//		category = new Category();
-//		category.setName("Mobile");
-//		category.setDescription("This is small descririon Mobile");
-//		category.setImageURL("Mobile_Url");
-//
-//		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
+		category = new Category();
+		category.setName("Mobile");
+		category.setDescription("This is small descririon Mobile");
+		category.setImageURL("Mobile_Url");
 
-//		// fetch a single category category = categoryDAO.get(2);
-//		assertEquals("Successfully fetch a single category from the database", "Mobile", category.getName());
-//
-//		// updating a category category.setName("Refrigerator");
-//		category.setDescription("This is small descririon refrigerator");
-//		category.setImageURL("refrigerator_url");
-//		assertEquals("Successfully update a category to the database", true, categoryDAO.update(category));
-//
-//		// deleting a category
-//
-//		category = categoryDAO.get(2);
-//		assertEquals("Successfully DeActive a category into the database", true, categoryDAO.delete(category));
-//
-//		assertEquals("Successfully Fetch list of category from the database", 4, categoryDAO.listofitem().size());
-//	}
+		assertEquals("Successfully add a category in  the database", true, categoryDAO.add(category));
+
+		// fetch a single category category = categoryDAO.get(2);
+		assertEquals("Successfully fetch a single category from the database", "Mobile", category.getName());
+
+		// updating a category category.setName("Refrigerator");
+		category.setDescription("This is small descririon refrigerator");
+		category.setImageURL("refrigerator_url");
+		assertEquals("Successfully update a category to the database", true, categoryDAO.update(category));
+
+		// deleting a category
+
+		category = categoryDAO.get(2);
+		assertEquals("Successfully DeActive a category into the database", true, categoryDAO.delete(category));
+
+		assertEquals("Successfully Fetch list of category from the database", 4, categoryDAO.listofitem().size());
+	}
 }

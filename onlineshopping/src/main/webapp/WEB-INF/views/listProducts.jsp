@@ -24,13 +24,14 @@
 
 					<!-- Add a breadcrumb -->
 
+
 					<div class="col-lg-12">
 
 						<c:if test="${userClickAllProduct== true}">
 
 
 							<script type="text/javascript">
-							window.categoryID ='';
+								window.categoryID = '';
 							</script>
 
 							<ol class="breadcrumb">
@@ -45,8 +46,7 @@
 
 
 							<script type="text/javascript">
-								window.categoryID ='${category.id}';
-								
+								window.categoryID = '${category.id}';
 							</script>
 
 							<ol class="breadcrumb">
@@ -58,18 +58,18 @@
 						</c:if>
 					</div>
 				</div>
-
+			
 				<div class="row">
 
 					<div class="col-xs-12">
 
-						<table id="listofproducts">
+						<table id="productListTable">
 							<thead>
 								<tr>
-									<th>name</th>
-									<th>brand</th>
-									<th>unitprice</th>
-									<th>quantity</th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Quantity</th>
 
 								</tr>
 							</thead>

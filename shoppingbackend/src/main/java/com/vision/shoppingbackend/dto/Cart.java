@@ -51,7 +51,8 @@ public class Cart implements Serializable {
 		this.cartLines = cartLines;
 	}
 	
-	
+	@OneToOne
+	private User user;
 	public User getUser() {
 		return user;
 	}
@@ -62,7 +63,6 @@ public class Cart implements Serializable {
 
 
 	//link cart with user as relation one to one
-	@OneToOne
-	private User user;
+	
 
 }

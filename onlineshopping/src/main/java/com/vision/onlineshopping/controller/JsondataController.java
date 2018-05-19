@@ -15,13 +15,15 @@ import com.vision.shoppingbackend.dto.Product;
 @RequestMapping("/json/data")
 public class JsondataController {
 
+//	private static final Logger logger=LoggerFactory.getLogger(JsondataController.class);
 	@Autowired
 	private ProductDAO productDAO;
 
 	@RequestMapping(value = "/all/products")
 	@ResponseBody
 	public List<Product> getAllProduct() {
-
+//		logger.info("Logger info started");
+//		logger.debug("Logger info started");
 		return productDAO.listActiveProducts();
 	}
 	
@@ -30,6 +32,8 @@ public class JsondataController {
 	@ResponseBody
 	public List<Product> getProductByCategory(@PathVariable int categoryId ) {
 
+	//	logger.info("Logger info started");
+	//	logger.debug("Logger info started");
 		return productDAO.listActiveProductsByCategory(categoryId);
 	}
 
